@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header>
-        <hello />
+      <el-header class="header">
+        <themenu />
       </el-header>
       <el-main>
         <router-view transition="fade"></router-view>
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import hello from "./components/HelloWorld";
+import themenu from "./components/Menu/index.vue";
 
 export default {
   name: "app",
   components: {
-    hello
+    themenu
   },
   methods: {}
 };
@@ -25,10 +25,10 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei,
+    Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-bottom: 60px;
 }
@@ -38,5 +38,11 @@ export default {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+</style>
+
+<style scoped>
+.header {
+  padding: 0;
 }
 </style>

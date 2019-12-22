@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Vue Project',
+  title: 'Monster',
 
   /**
    * @type {boolean} true | false
